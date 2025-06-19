@@ -1,10 +1,19 @@
+👤 About Me
+Zach Johnson, Data Analyst & Full-Stack Developer
+
+🔗 GitHub
+
+🔗 LinkedIn
+
+✉️ scienceofanalytics@gmail.com
+
 # Geo-Spatial Retail Expansion Optimizer
 
 **A “find-your-next-store” demo that turns free map and census data into clear, ranked expansion opportunities—complete with interactive maps and tables.**
 
 ---
 
-## 🚀 What It Is (Layman’s Terms)
+## 🚀 What It Is
 
 Imagine deciding where to open your next coffee shop in minutes instead of months. This tool:
 

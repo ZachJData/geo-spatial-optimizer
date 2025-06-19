@@ -1,0 +1,5 @@
+foot_traffic_source: "connectors.foot_traffic.OSMPOIAdapter"
+# You can add adapter-specific settings:
+osm_tags:
+  amenity: cafe
+week_start: "2025-06-01"
