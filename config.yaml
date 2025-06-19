@@ -3,3 +3,8 @@ foot_traffic_source: "connectors.foot_traffic.OSMPOIAdapter"
 osm_tags:
   amenity: cafe
 week_start: "2025-06-01"
+
+demographics_source: "connectors.demographics.CensusACSAdapter"
+acs_year: 2021
+state_fips: "06"
+county_fips: "075"
