@@ -8,3 +8,8 @@ demographics_source: "connectors.demographics.CensusACSAdapter"
 acs_year: 2021
 state_fips: "06"
 county_fips: "075"
+
+competitor_source: "connectors.competitors.OSMCompetitorAdapter"
+competitor_place: "Austin, Texas, USA"
+competitor_tags:
+  shop: True

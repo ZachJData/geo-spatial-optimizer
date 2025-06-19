@@ -1,6 +1,3 @@
-# pipeline.py
-
-import os
 import yaml
 import importlib
 from pathlib import Path
@@ -36,11 +33,22 @@ def main():
     print("▶️ Demographics sample:")
     print(df_demo.head(), "\n")
 
-    # 4. Persist outputs
+    # 4. Competitors
+    comp_cfg = {
+        "place_name": cfg.get("competitor_place"),
+        "tags": cfg.get("competitor_tags", {})
+    }
+    comp_adapter = get_adapter(cfg["competitor_source"], **comp_cfg)
+    df_comp = comp_adapter.load()
+    print("▶️ Competitor sample:")
+    print(df_comp.head(), "\n")
+
+    # 5. Persist outputs
     out_dir = Path("data/processed")
     out_dir.mkdir(parents=True, exist_ok=True)
     df_ft.to_csv(out_dir / "foot_traffic.csv", index=False)
     df_demo.to_csv(out_dir / "demographics.csv", index=False)
+    df_comp.to_csv(out_dir / "competitors.csv", index=False)
     print(f"✅ Written CSVs to {out_dir}")
 
 if __name__ == "__main__":
