@@ -6,8 +6,8 @@ week_start: "2025-06-01"
 
 demographics_source: "connectors.demographics.CensusACSAdapter"
 acs_year: 2021
-state_fips: "06"
-county_fips: "075"
+state_fips: "48"
+county_fips: "453"
 
 competitor_source: "connectors.competitors.OSMCompetitorAdapter"
 competitor_place: "Austin, Texas, USA"
